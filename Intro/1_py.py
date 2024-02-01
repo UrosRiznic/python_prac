@@ -33,6 +33,42 @@ user_name_string = str(input("What is your name? "))    # Expects string
 user_age = int(input("what is you age? "))              # Expects int 
 
 
+#Boolean values
+age = 20
+is_over_age = age >= 18 # True
+is_under_age = age < 18 # False 
+is_twenty = age == 20   # True
 
+num = 15
+test = num > 20 and num < 20 or num >= 15   # False and True or True = True
+
+bool(0) # False, int o
+bool(13) # True, int 13
+bool("") # False, string
+bool("Hello") # True, string
+bool([]) # False, list
+bool([1,3,5]) # True, List
+
+# and, &, or 
+age = 25
+result = age > 15 and age < 65 # True and True = True 
+result = age > 15 and age > 65 # True and False = False 
+result = age < 15 and age < 65 # False and True = False
+result = age < 15 and age > 65 # False and False = False
+
+result = age > 15 or age < 65 # True and True = True
+result = age > 15 or age > 65 # True and False = True
+result = age < 15 or age < 65 # False and True = True
+result = age < 15 or age > 65 # False and False = False
+
+result = age > 15 & age < 65 # True and True = True 
+result = age > 15 & age > 65 # True and False = False
+result = age < 15 & age < 65 # False and True = False
+result = age < 15 & age > 65 # False and False = True
+
+# LISTS
+#             0       1       2
+friends = ["Marko", "John", "Bob"]
+random_list = ["1", "", 0, True, False]
 
 
