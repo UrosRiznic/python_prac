@@ -68,7 +68,31 @@ result = age < 15 & age > 65 # False and False = True
 
 # LISTS
 #             0       1       2
+#             -3     -2       -1
 friends = ["Marko", "John", "Bob"]
 random_list = ["1", "", 0, True, False]
 
+print(friends[0])
+print(friends[-1])
+print(friends[2:5])
 
+matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+print(matrix[0][1])  # prints -> 1
+
+
+# Comprehensions 
+# [expression(item) for item in iterable]
+
+squares = [x**2 for x in range(10)]  # double numbers from 1-9 
+even_numbers = [x for x in range(10) if x % 2 == 0]   # [0, 2, 4 ,6 ,8]
+even_normal_odd_double = [x if x % 2 == 0 else x**2 for x in range(10)]
+
+# Reversing list 
+# list_object[start:stop:step]
+letters = ["A","a","B","b","C","c"]
+upper_letters = letters[0::2]  # or [::2]
+lover_letters = letters[1::2]
